@@ -5,7 +5,7 @@ public class FreeCupDiscount implements Discount {
 
     @Override
     public boolean doesApply(Cart cart) {
-        return cart.getTotal() > 200;
+        return cart.getTotal() > THRESHOLD;
     }
 
     @Override
